@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <div class="heading">
+            <p>Weather</p>
+        </div>
+        <div class="search">
+            <input id="inputData" type="text" placeholder="ENTER CITY NAME">
+            <button onclick="api()">SEARCH</button>
+        </div>
+        <div id="error">
+            <p>Please Enter A Valid City</p>
+        </div>
+        <div id="display">
+            <div id="icon-container">
+                <img src="icons/01d.png" id="icon">
+            </div>
+            <div id="temp"></div>
+            <div id="description">HAZE</div>
+            <div id="city-country">NOIDA,IN</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b6592dad01.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
